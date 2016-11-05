@@ -1,0 +1,201 @@
+{* Smarty Template *}
+<div class="contentHeader">{$version_data.version_info_header}</div>
+<div class="contentBody" align="center">{$version_data.version_info}</div>
+<br>
+<div class="contentHeader">{$general_page_data.statistics_header}</div><br>
+<div class="contentBody">
+<table width="80%" border="0" align="center" cellpadding="0" cellspacing="0">
+	<tr>
+    	<td valign="top" class="forumline"> 
+    	   <div class="tableTitle">{$general_page_data.wrm_statistics_text}</div>
+           <table width="100%" border="0" cellspacing="1" cellpadding="3" class="dataOutline">
+		      <tr>
+		        <th class="row1Header">{$general_page_data.statistic_text}</th>
+		        <th class="row2Header">{$general_page_data.value_text}</th>
+		      </tr>
+		      <tr>
+		      	<td class="row1">{$general_page_data.wrm_version_text}</td>
+		      	<td class="row2">{$version_data.version}</td>
+		      </tr>
+		      <tr>
+		      	<td class="row1">{$general_page_data.wrm_db_version_text}</td>
+		      	<td class="row2">{$version_data.wrm_db_version}</td>
+		      </tr>
+		      <tr>
+		      	<td class="row1">{$general_page_data.php_version_text}</td>
+		      	<td class="row2">{$general_page_data.php_version}</td>
+		      </tr>
+		      <tr>
+		      	<td class="row1">{$general_page_data.mysql_version_text}</td>
+		      	<td class="row2">{$general_page_data.mysql_version}</td>
+		      </tr>
+		      <tr>
+		      	<td class="row1">{$general_page_data.user_count_text}</td>
+		      	<td class="row2">{$general_page_data.user_count}</td>
+		      </tr>
+		   </table>
+		</td>
+		<td>&nbsp;</td>
+    	<td valign="top" class="forumline"> 
+    	   <div class="tableTitle">{$general_page_data.database_statistics_text}</div>
+           <table width="100%" border="0" cellspacing="1" cellpadding="3" class="dataOutline">
+		      <tr>
+		        <th class="row1Header">{$general_page_data.statistic_text}</th>
+		        <th class="row2Header">{$general_page_data.value_text}</th>
+		      </tr>
+		      <tr>
+		      	<td class="row1">{$general_page_data.wrm_db_name_text}</td>
+		      	<td class="row2">{$general_page_data.database_name}</td>
+		      </tr>
+		      <tr>
+		      	<td class="row1">{$general_page_data.wrm_db_host_text}</td>
+		      	<td class="row2">{$general_page_data.database_host}</td>
+		      </tr>
+		      <tr>
+		      	<td class="row1">{$general_page_data.wrm_db_user_text}</td>
+		      	<td class="row2">{$general_page_data.database_user}</td>
+		      </tr>
+		      <tr>
+		      	<td class="row1">{$general_page_data.wrm_tbl_prefix_text}</td>
+		      	<td class="row2">{$general_page_data.table_prefix}</td>
+		      </tr>
+		      <tr>
+		      	<td class="row1">{$general_page_data.mysql_database_size_text}</td>
+		      	<td class="row2">{$general_page_data.mysql_database_size}</td>
+		      </tr>
+		   </table>
+		</td>
+	</tr>
+	<tr><td>&nbsp;</td></tr>
+	<tr>
+    	<td valign="top" class="forumline" colspan="3"> 
+    	   <div class="tableTitle">{$raid_statistics_data.header}</div>
+    	   <div class="conentBody">{$raid_statistics_data.explanation}</div>
+           <table width="100%" border="0" cellspacing="1" cellpadding="3" class="dataOutline">
+		      <tr>
+		        <th width="25%" class="row1Header">{$general_page_data.statistic_text}</th>
+		        <th width="25%" class="row2Header">{$general_page_data.value_text}</th>
+		        <th width="25%" class="row1Header">{$general_page_data.statistic_text}</th>
+		        <th width="25%" class="row2Header">{$general_page_data.value_text}</th>
+		      </tr>
+		      <tr>
+		      	<td class="row1">{$raid_statistics_data.active_count_header}</td>
+		      	<td class="row2">{$raid_statistics_data.active_count}</td>
+		      	<td class="row1">{$raid_statistics_data.total_count_header}</td>
+		      	<td class="row2">{$raid_statistics_data.total_count}</td>
+		      </tr>
+		      <tr>
+		      	<td class="row1">{$raid_statistics_data.week_percent_header}</td>
+		      	<td class="row2">{$raid_statistics_data.week_percent}</td>
+		      	<td class="row1">{$raid_statistics_data.30d_percent_header}</td>
+		      	<td class="row2">{$raid_statistics_data.30d_percent}</td>
+		      </tr>
+		      <tr>
+		      	<td class="row1">{$raid_statistics_data.3m_percent_header}</td>
+		      	<td class="row2">{$raid_statistics_data.3m_percent}</td>
+		      	<td class="row1">{$raid_statistics_data.6m_percent_header}</td>
+		      	<td class="row2">{$raid_statistics_data.6m_percent}</td>
+		      </tr>
+		      <tr>
+		      	<td class="row1">{$raid_statistics_data.1y_percent_header}</td>
+		      	<td class="row2">{$raid_statistics_data.1y_percent}</td>
+		      	<td class="row1">{$raid_statistics_data.life_percent_header}</td>
+		      	<td class="row2">{$raid_statistics_data.life_percent}</td>
+		      </tr>
+			</table>
+		</td>
+	</tr>
+	<tr><td>&nbsp;</td></tr>
+	<tr>
+		<td valign="top" class="forumline" colspan="3">
+    	   <div class="tableTitle">{$general_page_data.actions_header}</div>
+    	   <div class="conentBody">{$general_page_data.actions_explanation}</div>
+           <table width="100%" border="0" cellspacing="1" cellpadding="3" class="dataOutline">
+		      <tr>
+				<td class="row1">{$general_page_data.delete_board_cache_text}</td>
+				<td class="row2">{$general_page_data.delete_board_cache_button}</td>
+			  </tr>
+		      <tr>
+				<td class="row1">{$general_page_data.delete_armory_cache_text}</td>
+				<td class="row2">{$general_page_data.delete_armory_cache_button}</td>
+			  </tr>
+		      <tr>
+				<td class="row1">{$general_page_data.delete_armory_log_text}</td>
+				<td class="row2">{$general_page_data.delete_armory_log_button}</td>
+			  </tr>
+		      <tr>
+				<td class="row1">{$general_page_data.delete_template_cache_text}</td>
+				<td class="row2">{$general_page_data.delete_template_cache_button}</td>
+			  </tr>
+		   </table>
+		</td>
+	</tr>		
+	<tr><td>&nbsp;</td></tr>
+	<tr>
+    	<td valign="top" class="forumline" colspan="3"> 
+    	   <div class="tableTitle">{$recent_logins_header.header}</div>
+    	   <div class="conentBody">{$recent_logins_header.explanation}</div>
+           <table width="100%" border="0" cellspacing="1" cellpadding="3" class="dataOutline">
+		      <tr>
+		        <th class="row1Header">{$recent_logins_header.username_header}</th>
+		        <th class="row2Header">{$recent_logins_header.email_header}</th>
+		        <th class="row1Header">{$recent_logins_header.priv_header}</th>
+		        <th class="row2Header">{$recent_logins_header.login_time_header}</th>
+		      </tr>
+		      {section name=recent_users loop=$recent_logins}
+			      <tr>
+			      	<td class="row1">{$recent_logins[recent_users].username}</td>
+			      	<td class="row2">{$recent_logins[recent_users].email}</td>
+			      	<td class="row1">{$recent_logins[recent_users].priv}</td>
+			      	<td class="row2">{$recent_logins[recent_users].login_time}</td>
+			      </tr>
+			  {/section}
+		   </table>
+		</td>
+	</tr>
+	<tr><td>&nbsp;</td></tr>
+	<tr>
+    	<td valign="top" class="forumline" colspan="3"> 
+    	   <div class="tableTitle">{$inactive_logins_header.header}</div>
+    	   <div class="conentBody">{$inactive_logins_header.explanation}</div>
+           <table width="100%" border="0" cellspacing="1" cellpadding="3" class="dataOutline">
+		      <tr>
+		        <th class="row1Header">{$recent_logins_header.username_header}</th>
+		        <th class="row2Header">{$recent_logins_header.email_header}</th>
+		        <th class="row1Header">{$recent_logins_header.priv_header}</th>
+		        <th class="row2Header">{$recent_logins_header.login_time_header}</th>
+		      </tr>
+		      {section name=inactive_users loop=$inactive_logins}
+			      <tr>
+			      	<td class="row1">{$inactive_logins[inactive_users].username}</td>
+			      	<td class="row2">{$inactive_logins[inactive_users].email}</td>
+			      	<td class="row1">{$inactive_logins[inactive_users].priv}</td>
+			      	<td class="row2">{$inactive_logins[inactive_users].login_time}</td>
+			      </tr>
+			  {/section}
+		   </table>
+		</td>
+	</tr>
+	<tr><td>&nbsp;</td></tr>
+	<tr>
+    	<td valign="top" class="forumline" colspan="3"> 
+    	   <div class="tableTitle">{$logs_header.header}</div>
+    	   <div class="conentBody">{$logs_header.explanation}</div>
+           <table width="100%" border="0" cellspacing="1" cellpadding="3" class="dataOutline">
+		      <tr>
+		        <th width="14%" class="row1Header">{$logs_header.timestamp_header}</th>
+		        <th width="10%" class="row2Header">{$logs_header.ip_header}</th>
+		        <th width="76%" class="row1Header">{$logs_header.message_header}</th>
+		      </tr>
+		      {section name=log_data_sec loop=$log_data}
+			      <tr>
+			      	<td class="row1">{$log_data[log_data_sec].timestamp}</td>
+			      	<td class="row2">{$log_data[log_data_sec].ip}</td>
+			      	<td class="row1">{$log_data[log_data_sec].message}</td>
+			      </tr>
+			  {/section}
+		   </table>
+		</td>
+	</tr>
+</table>
+</div>

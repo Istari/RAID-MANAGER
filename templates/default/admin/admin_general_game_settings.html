@@ -1,0 +1,26 @@
+{* Smarty Template *}
+<form action="{$config_data.form_action}" method="post" name="configure" id="configure">
+<div class="contentHeader">{$config_data.game_header}</div>
+<br>
+<div class="contentBody">
+	<table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+	  <tr>
+	    <td valign="top" class="forumline">
+	      <table width="100%" border="0" cellspacing="1" cellpadding="3" class="dataOutline">
+	        <tr> 
+	          <td width="200" class="row1"><strong>{$config_data.select_expansion_text}</strong></td>
+	          <td class="row2">
+	           	{html_options name=game_expansion options=$config_data.array_game_expansion selected=$config_data.selected_array_game_expansion class="post"}
+	          </td>
+	        </tr>
+	      </table>
+	    </td>
+	  </tr>
+	</table>
+</div>
+<br>
+<div align="center" class="button">
+	<input type="submit" value="{$config_data.button_submit}" name="submit" class="mainoption">
+	<input type="reset" value="{$config_data.button_reset}" name="reset" class="liteoption">
+</div>
+</form>
